@@ -11,11 +11,11 @@
   <body>
     <table>
       <tr>
-        <input type="text" id="result" class="input" />
+        <input type="text" id="result" class="input" value=""/>
       </tr>
       <tr>
         <td>
-          <input type="button" class="btn" value="CE" onclick="Reset()" />
+          <input type="button" class="btn reset_input" value="AC" onclick="Reset()" />
         </td>
         <td>
           <input
@@ -30,7 +30,7 @@
             type="button"
             class="btn"
             value="%"
-            onclick="result.value += this.value"
+            onclick="Percent()"
           />
         </td>
         <td>
@@ -105,7 +105,7 @@
           <input
             type="button"
             class="btn"
-            value="x"
+            value="*"
             onclick="result.value += this.value"
           />
         </td>
@@ -153,7 +153,7 @@
             onclick="result.value += this.value"
           />
         </td>
-        <td><input type="button" class="btn" value="+/-" /></td>
+        <td><input type="button" class="btn" value="+/-" onclick="ChangeValue()"/></td>
         <td>
           <input
             type="button"
